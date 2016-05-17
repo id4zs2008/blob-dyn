@@ -3,7 +3,11 @@ from sklearn.metrics import mutual_info_score
 
 """
 A mini version to get mi
+Sample output:
+mi = 0.63
 """
+
+
 def auto_mi(nbins, X, Y, range=2*[[-180., 180.]]):
     joint_mtx =  np.histogram2d(X,Y,nbins,range=range)
     return mutual_info_score(None, None, contingency=joint_mtx[0])
