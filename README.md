@@ -1,4 +1,4 @@
 # blob-dyn
-This software intends to probe inter-residue comminications in proteins from a new perspective
+The script probe inter-residue comminications in proteins using advanced correlation methods
 
 
