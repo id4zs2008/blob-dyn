@@ -14,6 +14,7 @@ from mdentropy.entropy import mi
 adopted from the following source
 http://stackoverflow.com/questions/20491028/optimal-way-to-compute-pairwise-mutual-information-using-numpy
 compared mi1(stackoverflow formula, using log2 but changed to natural log for comparison) and mi2 (mdentropy module, natural log)
+FOUND that mi1 is exactly equal to mi2 using the same data, indicating that the algorithm implementation is good
 """
 def calc_MI(X,Y,bins,range1,range2):
     c_XY = np.histogram2d(X,Y,bins,range=range2)[0]
