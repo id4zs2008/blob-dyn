@@ -3,6 +3,8 @@ import re
 import networkx as nx
 import matplotlib.pyplot as plt
 
+#plot node pairs that have mi > 0.5 and not self-pairs
+
 def draw_graph(graph, labels=None, graph_layout='shell',
                node_size=300, node_color='red', node_alpha=0.5,
                node_text_size=10,
