@@ -1,4 +1,4 @@
 # blob-dyn
-The script examines inter-residue comminications in proteins using advanced correlation methods
+The script detects intra-pro comminications using advanced correlation methods
 
 
