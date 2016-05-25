@@ -5,7 +5,9 @@ import re
 import math
 import sys
 
-"""get a list of transition time points in sequential order"""
+"""
+get a list of transition time points in sequential order
+"""
 def trans_time(X):
     t_t = []
     """increase 1D neighbor search radius nbr to filter out thermal fluctuations,
@@ -23,7 +25,7 @@ def trans_time(X):
 
 """
 transition time function T(X, n) to get the time of
-N th transition of a time series X time unit is 100 picosecond
+N th transition of a time series X time unit is in 100 picosecond
 """
 def trans_time_n(X, n):
     T = trans_time(X)
@@ -89,5 +91,5 @@ def get_ca(X, Y):
 
 X = np.loadtxt('dih-sample22', usecols = (0,), unpack = True)
 Y = np.loadtxt('dih-sample29', usecols = (0,), unpack = True)
-CA = get_ca(Y, Y)
+CA = get_ca(X, Y)
 print 'CA is %.3f' % (CA)
