@@ -1,7 +1,6 @@
 #!/usr/bin/python
 """
-Calculate conditional activity between pairs of residue PHIs or PSIs
-as implemented in Milo Lin JACS 2016
+Implementation of conditional activity in M. Lin, J. Am. Chem. Soc., 2016, 138 (15)
 """
 import numpy as np
 from sklearn.metrics import mutual_info_score
