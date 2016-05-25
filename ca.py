@@ -5,7 +5,6 @@ import re
 import math
 import sys
 
-
 """get a list of transition time points in sequential order"""
 def trans_time(X):
     t_t = []
