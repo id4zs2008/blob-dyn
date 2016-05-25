@@ -1,4 +1,4 @@
 # blob-dyn
-The script detects intra-pro comminications using advanced correlation methods
+This program detects intra-protein comminications using advanced correlation methods
 
 
