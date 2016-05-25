@@ -1,10 +1,5 @@
 #!/usr/bin/python
-"""
-Implementation of conditional activity in M. Lin, J. Am. Chem. Soc., 2016, 138 (15)
-"""
 import numpy as np
-from sklearn.metrics import mutual_info_score
-import MDAnalysis
 import os
 import re
 import math
