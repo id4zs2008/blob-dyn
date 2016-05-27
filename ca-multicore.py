@@ -41,7 +41,7 @@ def trans_time(X):
     t_t = []
     """increase 1D neighbor search radius nbr to filter out thermal fluctuations,
         assuming symmetric peaks, for unsymmetric case need left nbr and right nbr"""
-    nbr = 100
+    nbr = 10
     for i in range(0 + nbr, len(X) - nbr):
         peak = 1
         for j in range(1, nbr+1):
@@ -50,7 +50,17 @@ def trans_time(X):
                 break
         if peak == 1:
             t_t.append(i+1)
-    return t_t
+    find_basin = t_time(X, t_t)
+    return find_basin
+def t_time(X, t_t):
+    rg = 1
+    k_k = []
+    for i in range(0, len(X)):
+        peak1 = min(t_t, key=lambda x:abs(x-i))
+        peak2 = min(t_t, key=lambda x:abs(x-(i+rg)))
+        if peak1 != peak2:
+            k_k.append(i)
+    return k_k
 
 
 """
